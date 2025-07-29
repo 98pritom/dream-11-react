@@ -10,6 +10,7 @@ function App() {
   const [addCoins, setAddCoins] = useState(0);
   const [players, setPlayers] = useState([]);
   const [selectedPlayers, setSelectedPlayers] = useState([]);
+  const [viewport, setViewPort] = useState('available');
 
   useEffect(() => {
     fetch('players.json')
@@ -18,24 +19,36 @@ function App() {
   }, []);
 
   const handleSelectPlayer = (player) => {
+    if (addCoins > player.price_usd) {
+      console.log('player added');
+      setAddCoins(addCoins - player.price_usd);
+      setSelectedPlayers([...selectedPlayers, player]);
+    } else {
+      console.log('You dont have enough money');
+    }
     // console.log('player selected:', player);
-    setSelectedPlayers([...selectedPlayers, player]);
   }
 
   const handleAddCoins = () => {
-    setAddCoins(addCoins + 20000);
-    alert(`Congratulations! You have received ${addCoins + 20000} coins.`)
+    setAddCoins(addCoins + 100000);
+    alert(`Congratulations! You have received ${addCoins + 100000} coins.`)
   }
 
-  console.log(players)
+  const handleViewPort = (selected) => {
+    console.log('selected view port: ', selected);
+    setViewPort(selected);
+  }
+
+  // console.log(players);
 
   return (
     <>
       <Header handleAddCoins={handleAddCoins} addCoins={addCoins}></Header>
-      <MidNav></MidNav>
+      <MidNav viewport={viewport} handleViewPort={handleViewPort}></MidNav>
       <div className='max-w-7xl mx-auto mt-5'>
-        <AvailablePlayers handleSelectPlayer={handleSelectPlayer} players={players} />
-        <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
+        {
+          viewport === 'available' ? <AvailablePlayers handleSelectPlayer={handleSelectPlayer} players={players} /> : <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
+        }
       </div>
     </>
   )
