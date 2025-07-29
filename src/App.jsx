@@ -19,12 +19,17 @@ function App() {
   }, []);
 
   const handleSelectPlayer = (player) => {
-    if (addCoins > player.price_usd) {
-      console.log('player added');
-      setAddCoins(addCoins - player.price_usd);
-      setSelectedPlayers([...selectedPlayers, player]);
-    } else {
-      console.log('You dont have enough money');
+    if (selectedPlayers.length < 6) {
+      if (addCoins > player.price_usd) {
+        setAddCoins(addCoins - player.price_usd);
+        setSelectedPlayers([...selectedPlayers, player]);
+        alert(`Congratulations! ${player.name} added in your team.`);
+      } else {
+        alert('You dont have enough money');
+      }
+    }
+    else {
+      alert('You already have six players in your team.');
     }
     // console.log('player selected:', player);
   }
@@ -44,7 +49,7 @@ function App() {
   return (
     <>
       <Header handleAddCoins={handleAddCoins} addCoins={addCoins}></Header>
-      <MidNav viewport={viewport} handleViewPort={handleViewPort}></MidNav>
+      <MidNav selectedPlayers={selectedPlayers} viewport={viewport} handleViewPort={handleViewPort}></MidNav>
       <div className='max-w-7xl mx-auto mt-5'>
         {
           viewport === 'available' ? <AvailablePlayers handleSelectPlayer={handleSelectPlayer} players={players} /> : <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
