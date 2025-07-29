@@ -1,15 +1,8 @@
 import logo from '../../assets/logo.png';
 import banner from '../../assets/banner-main.png';
 import { RiCoinsFill } from "react-icons/ri";
-import { useState } from 'react';
 
-const Header = () => {
-    const [addCoins, setAddCoins] = useState(0);
-
-    const handleAddCoins = () => {
-        setAddCoins(addCoins + 20000);
-        alert(`Congratulations! You have received ${addCoins + 20000} coins.`)
-    }
+const Header = ({ handleAddCoins, addCoins }) => {
     return (
         <header className='max-w-7xl mx-auto'>
             <nav className='flex flex-col md:flex-row md:justify-between items-center md:px-5 md:mb-6'>
@@ -21,7 +14,7 @@ const Header = () => {
                         <li>Teams</li>
                         <li>Scedules</li>
                     </ul>
-                    <div className='flex items-center gap-2 mb-4 border border-gray-200 px-3 py-2 rounded-xl'>
+                    <div className='flex items-center gap-2 mb-4 md:mb-0 border border-gray-200 px-3 py-2 rounded-xl'>
                         <p className='font-semibold'>{addCoins} Coins
                         </p>
                         <RiCoinsFill className='text-yellow-500 text-xl' />
