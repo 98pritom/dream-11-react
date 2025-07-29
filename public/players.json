@@ -1,0 +1,167 @@
+[
+    {
+        "id": 1,
+        "name": "Alex Hales",
+        "player_image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_480,q_50/esci/media/motion/2023/0804/dm_230804_COM_CRI_Analysis_Alex_Hales_legacy_T20_World_Cup_winner_or_off_field_antics_20230804_GLOBAL/dm_230804_COM_CRI_Analysis_Alex_Hales_legacy_T20_World_Cup_winner_or_off_field_antics_20230804_GLOBAL.jpg",
+        "country": "England",
+        "role": "Batsman",
+        "batting_style": "Right-hand",
+        "bowling_style": "Right-arm medium",
+        "category": "A",
+        "price_usd": 70000
+    },
+    {
+        "id": 2,
+        "name": "Thisara Perera",
+        "player_image": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/01/21/643906-thisara-perera-pti.jpg",
+        "country": "Sri Lanka",
+        "role": "All-rounder",
+        "batting_style": "Left-hand",
+        "bowling_style": "Right-arm fast-medium",
+        "category": "A",
+        "price_usd": 70000
+    },
+    {
+        "id": 3,
+        "name": "Rahkeem Cornwall",
+        "player_image": "https://e0.365dm.com/21/02/2048x1152/skysports-cricket-west-indies_5272196.jpg?20210214113332",
+        "country": "West Indies",
+        "role": "All-rounder",
+        "batting_style": "Right-hand",
+        "bowling_style": "Right-arm off-spin",
+        "category": "B",
+        "price_usd": 50000
+    },
+    {
+        "id": 4,
+        "name": "Pathum Nissanka",
+        "player_image": "https://srilankacricket.lk/storage/2024/02/Pathum-Nissanka-100-runs_VAK_2360-E-1.jpg",
+        "country": "Sri Lanka",
+        "role": "Batsman",
+        "batting_style": "Right-hand",
+        "bowling_style": "Occasional off-spin",
+        "category": "A",
+        "price_usd": 70000
+    },
+    {
+        "id": 5,
+        "name": "Paul Stirling",
+        "player_image": "https://cdcimages.cricket.com/news-1695189793450?auto=compress,format&dpr=1&w=976&h400&q=80",
+        "country": "Ireland",
+        "role": "All-rounder",
+        "batting_style": "Right-hand",
+        "bowling_style": "Right-arm medium",
+        "category": "A",
+        "price_usd": 70000
+    },
+    {
+        "id": 6,
+        "name": "Curtis Campher",
+        "player_image": "https://ichef.bbci.co.uk/ace/standard/3840/cpsprodpb/8dd1/live/6eec7c20-5981-11ef-a905-1d09b5151059.jpg",
+        "country": "Ireland",
+        "role": "All-rounder",
+        "batting_style": "Right-hand",
+        "bowling_style": "Left-arm medium",
+        "category": "B",
+        "price_usd": 50000
+    },
+    {
+        "id": 7,
+        "name": "Saurabh Netravalkar",
+        "player_image": "https://asiaone.co.in/wp-content/uploads/2024/06/Saurabh-Netravalkar-The-Engineer-Who-Conquered-the-Cricket-Field.jpeg",
+        "country": "USA",
+        "role": "Bowler",
+        "batting_style": "Right-hand",
+        "bowling_style": "Left-arm pace",
+        "category": "B",
+        "price_usd": 50000
+    },
+    {
+        "id": 8,
+        "name": "Khushdil Shah",
+        "player_image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "country": "Pakistan",
+        "role": "Batsman",
+        "batting_style": "Left-hand",
+        "bowling_style": "Right-arm off-spin",
+        "category": "B",
+        "price_usd": 50000
+    },
+    {
+        "id": 9,
+        "name": "Mohammad Nawaz",
+        "player_image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "country": "Pakistan",
+        "role": "All-rounder",
+        "batting_style": "Left-hand",
+        "bowling_style": "Left-arm orthodox",
+        "category": "B",
+        "price_usd": 50000
+    },
+    {
+        "id": 10,
+        "name": "Moeen Ali",
+        "player_image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "country": "England",
+        "role": "All-rounder",
+        "batting_style": "Left-hand",
+        "bowling_style": "Right-arm off-spin",
+        "category": "A",
+        "price_usd": 70000
+    },
+    {
+        "id": 11,
+        "name": "Shakib Al Hasan",
+        "player_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQjTwLKvtRmNdWwAfJcnumXp3jzf7Lc01mA&s",
+        "country": "Bangladesh",
+        "role": "All-rounder",
+        "batting_style": "Left-hand",
+        "bowling_style": "Slow left-arm orthodox",
+        "category": "A",
+        "price_usd": 80000
+    },
+    {
+        "id": 12,
+        "name": "Tamim Iqbal",
+        "player_image": "https://cricfrenzy.com/public/storage/images/3-2025/1T0675Gfa6Babf64czd4xV67.PNG",
+        "country": "Bangladesh",
+        "role": "Batsman",
+        "batting_style": "Left-hand",
+        "bowling_style": "Right-arm off-spin",
+        "category": "A",
+        "price_usd": 80000
+    },
+    {
+        "id": 13,
+        "name": "Mushfiqur Rahim",
+        "player_image": "https://static.cricbuzz.com/a/img/v1/i1/c624294/mushfiqur-rahim-announces-odi-retirement.jpg?d=low&p=det",
+        "country": "Bangladesh",
+        "role": "Batsman",
+        "batting_style": "Right-hand",
+        "bowling_style": "Occasional keeper",
+        "category": "A",
+        "price_usd": 80000
+    },
+    {
+        "id": 14,
+        "name": "Mustafizur Rahman",
+        "player_image": "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2023/12/19/img_20231219_202842.jpg",
+        "country": "Bangladesh",
+        "role": "Bowler",
+        "batting_style": "Right-hand",
+        "bowling_style": "Left-arm fast-medium",
+        "category": "A",
+        "price_usd": 80000
+    },
+    {
+        "id": 15,
+        "name": "Afif Hossain",
+        "player_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNuMD9vfA9ZbXChw4MiB_hyMP-1Ey5DPZYUA&s",
+        "country": "Bangladesh",
+        "role": "All-rounder",
+        "batting_style": "Left-hand",
+        "bowling_style": "Right-arm off-spin",
+        "category": "A",
+        "price_usd": 80000
+    }
+]

@@ -28,7 +28,7 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-            <div className='flex flex-col space-y-5 justify-center items-center p-10 bg-radial-[at_5%_5%] from-white to-zinc-900 to-75% rounded-3xl mx-2'>
+            <div className='flex flex-col space-y-5 justify-center items-center p-10 bg-radial-[at_5%_5%] from-white to-zinc-900 to-75% rounded-3xl mx-2 md:mx-0'>
                 <img src={banner} alt={'Banner image'} />
                 <h2 className='text-4xl text-white font-bold'>Assemble Your Ultimate Dream 11 Cricket Team</h2>
                 <p className='text-gray-200 text-2xl font-medium'>Beyond Boundaries Beyond Limits</p>
