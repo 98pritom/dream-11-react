@@ -5,6 +5,7 @@ import AvailablePlayers from './components/AvailablePlayers/AvailablePlayers'
 import Header from './components/header/Header'
 import SelectedPlayers from './components/SelectedPlayers/SelectedPlayers';
 import MidNav from './components/MidNav/MidNav';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [addCoins, setAddCoins] = useState(0);
@@ -55,6 +56,7 @@ function App() {
           viewport === 'available' ? <AvailablePlayers handleSelectPlayer={handleSelectPlayer} players={players} /> : <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
         }
       </div>
+      <Footer></Footer>
     </>
   )
 }
