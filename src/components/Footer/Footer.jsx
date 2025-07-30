@@ -52,7 +52,7 @@ const Footer = () => {
 
                 {/* Bottom Copyright */}
                 <div className='border-t border-gray-700 mt-12 pt-6 text-center text-gray-400'>
-                    <p>© {new Date().getFullYear()} Your Company. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} Dream 11. All rights reserved.</p>
                 </div>
             </div>
         </footer>

@@ -2,8 +2,8 @@ import React from 'react';
 import { MdDeleteOutline } from "react-icons/md";
 
 
-const Selected = ({ player }) => {
-    const { name, price_usd, player_image } = player;
+const Selected = ({ player, handleRemoveSelectedPlayer }) => {
+    const { id, name, price_usd, player_image } = player;
     return (
         <div className='flex justify-between border border-gray-200 p-2 rounded mb-2'>
             <div className='flex gap-5'>
@@ -13,7 +13,7 @@ const Selected = ({ player }) => {
                     <p className='text-gray-500'>${price_usd}</p>
                 </div>
             </div>
-            <button className='text-red-400 text-2xl'><MdDeleteOutline />
+            <button onClick={() => handleRemoveSelectedPlayer(id)} className='text-red-400 text-2xl hover:cursor-pointer'><MdDeleteOutline />
             </button>
         </div>
     );

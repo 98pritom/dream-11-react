@@ -45,6 +45,12 @@ function App() {
     setViewPort(selected);
   }
 
+  const handleRemoveSelectedPlayer = (id) => {
+    console.log('removing player', id);
+    const updatedPlayer = selectedPlayers.filter(selectedPlayer => selectedPlayer.id !== id);
+    setSelectedPlayers(updatedPlayer);
+  }
+
   // console.log(players);
 
   return (
@@ -53,7 +59,7 @@ function App() {
       <MidNav selectedPlayers={selectedPlayers} viewport={viewport} handleViewPort={handleViewPort}></MidNav>
       <div className='max-w-7xl mx-auto mt-5'>
         {
-          viewport === 'available' ? <AvailablePlayers handleSelectPlayer={handleSelectPlayer} players={players} /> : <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
+          viewport === 'available' ? <AvailablePlayers handleSelectPlayer={handleSelectPlayer} players={players} /> : <SelectedPlayers selectedPlayers={selectedPlayers} handleRemoveSelectedPlayer={handleRemoveSelectedPlayer}></SelectedPlayers>
         }
       </div>
       <Footer></Footer>
